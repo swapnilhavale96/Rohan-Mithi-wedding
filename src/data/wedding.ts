@@ -69,8 +69,8 @@ export interface WeddingConfig {
   // Events
   events: WeddingEvent[];
 
-  // Photo Gallery
-  gallery: GalleryImage[];
+  // Photo Gallery (optional)
+  gallery?: GalleryImage[];
 
   // RSVP & Sharing
   whatsappNumber: string; // Include country code, e.g. "919876543210"
@@ -107,14 +107,14 @@ const weddingConfig: WeddingConfig = {
   // COUPLE INFORMATION
   // =====================
   bride: {
-    firstName: "Meera",
-    lastName: "Sharma",
-    parentNames: "Daughter of Mr. Rajesh & Mrs. Sunita Sharma",
+    firstName: "Mithi",
+    lastName: "Tiwari",
+    parentNames: "Daughter of Mr. Vimal & Mrs. Nitu Tiwari",
   },
   groom: {
-    firstName: "Aarav",
-    lastName: "Patel",
-    parentNames: "Son of Mr. Vikram & Mrs. Priya Patel",
+    firstName: "Rohan",
+    lastName: "Dubey",
+    parentNames: "Son of Mr. Sunil & Mrs. Ranjana Dubey",
   },
 
   // =====================
@@ -125,25 +125,25 @@ const weddingConfig: WeddingConfig = {
   invitationMessage:
     "With the blessings of our parents and the grace of God, we joyfully invite you to celebrate the union of our hearts as we begin our forever together.",
   familyInvitationText:
-    "Mr. Vikram & Mrs. Priya Patel and Mr. Rajesh & Mrs. Sunita Sharma cordially invite you to the wedding celebration of their beloved children.",
+    "Mr. Sunil & Mrs. Ranjana Dubey and Mr. Vimal & Mrs. Nitu Tiwari cordially invite you to the wedding celebration of their beloved children.",
 
   // =====================
   // WEDDING DATE
   // =====================
   // Set the wedding date in ISO 8601 format
-  weddingDate: "2026-11-15T18:00:00+05:30",
-  weddingDateDisplay: "Sunday, 15th November 2026",
+  weddingDate: "2026-12-08T18:00:00+05:30",
+  weddingDateDisplay: "Wednesday, 08 December 2026",
   weddingTimezone: "Asia/Kolkata",
 
   // =====================
   // VENUE
   // =====================
   venue: {
-    name: "The Royal Orchid Heritage",
-    address: "Survey No. 36, Near Aga Khan Palace, Nagar Road",
-    city: "Pune, Maharashtra 411006",
-    googleMapsUrl: "https://maps.google.com/?q=The+Orchid+Hotel+Pune",
-    googleMapsEmbedQuery: "The+Orchid+Hotel+Pune",
+    name: "Dak Bangla Zila Parishad, Dumka",
+    address: "765X+VQH, Bypass Rd",
+    city: "Dumka, Jharkhand 814101",
+    googleMapsUrl: "https://maps.app.goo.gl/QCmy7n1kCD5o9gz88",
+    googleMapsEmbedQuery: "Dak Bangla Zila Parishad, Dumka",
   },
 
   // =====================
@@ -153,10 +153,10 @@ const weddingConfig: WeddingConfig = {
     {
       id: "haldi",
       name: "Haldi Ceremony",
-      date: "Thursday, 12th November 2026",
+      date: "Thursday, 07 December 2026",
       time: "10:00 AM – 1:00 PM",
-      venue: "Patel Family Residence",
-      address: "12, Koregaon Park, Pune",
+      venue: "Dak Bangla Zila Parishad, Dumka",
+      address: "Dumka, Jharkhand ",
       description:
         "Join us for the traditional Haldi ceremony as we bless the couple with turmeric for a radiant glow and auspicious beginning.",
       dressCode: "Yellow & Traditional",
@@ -165,10 +165,10 @@ const weddingConfig: WeddingConfig = {
     {
       id: "mehendi",
       name: "Mehendi Ceremony",
-      date: "Thursday, 12th November 2026",
+      date: "Thursday,  07 December 2026",
       time: "4:00 PM – 8:00 PM",
-      venue: "Patel Family Residence",
-      address: "12, Koregaon Park, Pune",
+      venue: "Dak Bangla Zila Parishad, Dumka",
+      address: "Dumka, Jharkhand ",
       description:
         "An afternoon of beautiful henna artistry, music, and celebration. Watch as intricate patterns tell stories of love.",
       dressCode: "Green & Festive Attire",
@@ -177,10 +177,10 @@ const weddingConfig: WeddingConfig = {
     {
       id: "sangeet",
       name: "Sangeet Night",
-      date: "Friday, 13th November 2026",
+      date: "Thursday, 07 December 2026",
       time: "7:00 PM Onwards",
-      venue: "The Royal Orchid Heritage",
-      address: "Survey No. 36, Nagar Road, Pune",
+      venue: "Dak Bangla Zila Parishad, Dumka",
+      address: "Dumka, Jharkhand ",
       description:
         "A sparkling evening of dance, music, and unforgettable performances. Get ready to dance the night away!",
       dressCode: "Glamorous & Glittering",
@@ -189,10 +189,10 @@ const weddingConfig: WeddingConfig = {
     {
       id: "wedding",
       name: "Wedding Ceremony",
-      date: "Sunday, 15th November 2026",
+      date: "Wednesday, 08 December 2026",
       time: "6:00 PM – 9:00 PM",
-      venue: "The Royal Orchid Heritage",
-      address: "Survey No. 36, Nagar Road, Pune",
+      venue: "Dak Bangla Zila Parishad, Dumka",
+      address: "Dumka, Jharkhand ",
       description:
         "Witness the sacred union as Aarav and Meera take their vows and begin their beautiful journey together around the holy fire.",
       dressCode: "Traditional Indian Formal",
@@ -201,10 +201,10 @@ const weddingConfig: WeddingConfig = {
     {
       id: "reception",
       name: "Grand Reception",
-      date: "Sunday, 15th November 2026",
+      date: "Wednesday, 08 December 2026",
       time: "9:00 PM Onwards",
-      venue: "The Royal Orchid Heritage",
-      address: "Survey No. 36, Nagar Road, Pune",
+      venue: "Dak Bangla Zila Parishad, Dumka",
+      address: "Dumka, Jharkhand",
       description:
         "Join us for a grand celebration with dinner, music, and joyous festivities as we welcome the newlyweds.",
       dressCode: "Elegant & Formal",
@@ -217,7 +217,7 @@ const weddingConfig: WeddingConfig = {
   // =====================
   // Replace these with your actual photos.
   // Place images in public/images/ and update the paths below.
-  gallery: [
+  /*gallery: [
     {
       src: "/images/gallery-1.jpg",
       alt: "Aarav and Meera - Engagement",
@@ -254,12 +254,12 @@ const weddingConfig: WeddingConfig = {
       width: 800,
       height: 600,
     },
-  ],
+  ]*/
 
   // =====================
   // RSVP & SHARING
   // =====================
-  whatsappNumber: "919876543210", // Replace with actual WhatsApp number
+  whatsappNumber: "918003594151", // Replace with actual WhatsApp number
   rsvpMessage:
     "Dear Aarav & Meera, I am delighted to confirm my attendance at your wedding celebration! 🎊",
   websiteUrl: "https://aarav-meera-wedding.vercel.app", // Update after deploying
