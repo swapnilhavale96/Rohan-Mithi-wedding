@@ -262,7 +262,7 @@ const weddingConfig: WeddingConfig = {
   whatsappNumber: "918003594151", // Replace with actual WhatsApp number
   rsvpMessage:
     "Dear Aarav & Meera, I am delighted to confirm my attendance at your wedding celebration! 🎊",
-  websiteUrl: "https://aarav-meera-wedding.vercel.app", // Update after deploying
+  websiteUrl: "https://rohan-mithi-wedding.vercel.app", // Update after deploying
 
   // =====================
   // MUSIC (Optional)
