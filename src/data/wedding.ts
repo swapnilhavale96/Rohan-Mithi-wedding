@@ -79,6 +79,7 @@ export interface WeddingConfig {
 
   // Music (optional)
   backgroundMusicPath?: string; // Path to audio file in public/ directory
+  musicTitle?: string; // Song title (e.g. "Mangal Rang")
 
   // Theme Colors (CSS custom properties)
   theme: {
@@ -113,7 +114,7 @@ const weddingConfig: WeddingConfig = {
   },
   groom: {
     firstName: "Rohan",
-    lastName: "Dubey",
+    lastName: "Kumar",
     parentNames: "Son of Mr. Sunil & Mrs. Ranjana Dubey",
   },
 
@@ -132,7 +133,7 @@ const weddingConfig: WeddingConfig = {
   // =====================
   // Set the wedding date in ISO 8601 format
   weddingDate: "2026-12-08T18:00:00+05:30",
-  weddingDateDisplay: "Wednesday, 08 December 2026",
+  weddingDateDisplay: "Wednesday, 09 December 2026",
   weddingTimezone: "Asia/Kolkata",
 
   // =====================
@@ -153,7 +154,7 @@ const weddingConfig: WeddingConfig = {
     {
       id: "haldi",
       name: "Haldi Ceremony",
-      date: "Thursday, 07 December 2026",
+      date: "Thursday, 08 December 2026",
       time: "10:00 AM – 1:00 PM",
       venue: "Dak Bangla Zila Parishad, Dumka",
       address: "Dumka, Jharkhand ",
@@ -165,7 +166,7 @@ const weddingConfig: WeddingConfig = {
     {
       id: "mehendi",
       name: "Mehendi Ceremony",
-      date: "Thursday,  07 December 2026",
+      date: "Thursday,  08 December 2026",
       time: "4:00 PM – 8:00 PM",
       venue: "Dak Bangla Zila Parishad, Dumka",
       address: "Dumka, Jharkhand ",
@@ -177,7 +178,7 @@ const weddingConfig: WeddingConfig = {
     {
       id: "sangeet",
       name: "Sangeet Night",
-      date: "Thursday, 07 December 2026",
+      date: "Thursday, 08 December 2026",
       time: "7:00 PM Onwards",
       venue: "Dak Bangla Zila Parishad, Dumka",
       address: "Dumka, Jharkhand ",
@@ -189,7 +190,7 @@ const weddingConfig: WeddingConfig = {
     {
       id: "wedding",
       name: "Wedding Ceremony",
-      date: "Wednesday, 08 December 2026",
+      date: "Wednesday, 09 December 2026",
       time: "6:00 PM – 9:00 PM",
       venue: "Dak Bangla Zila Parishad, Dumka",
       address: "Dumka, Jharkhand ",
@@ -201,14 +202,14 @@ const weddingConfig: WeddingConfig = {
     {
       id: "reception",
       name: "Grand Reception",
-      date: "Wednesday, 08 December 2026",
+      date: "Wednesday, 09 December 2026",
       time: "9:00 PM Onwards",
       venue: "Dak Bangla Zila Parishad, Dumka",
       address: "Dumka, Jharkhand",
       description:
         "Join us for a grand celebration with dinner, music, and joyous festivities as we welcome the newlyweds.",
       dressCode: "Elegant & Formal",
-      icon: "🥂",
+      icon: "🎊",
     },
   ],
 
@@ -261,15 +262,14 @@ const weddingConfig: WeddingConfig = {
   // =====================
   whatsappNumber: "918003594151", // Replace with actual WhatsApp number
   rsvpMessage:
-    "Dear Aarav & Meera, I am delighted to confirm my attendance at your wedding celebration! 🎊",
+    "Dear Sunil, I am delighted to confirm my attendance at your wedding celebration! 🎊 🎊",
   websiteUrl: "https://rohan-mithi-wedding.vercel.app", // Update after deploying
 
   // =====================
-  // MUSIC (Optional)
+  // MUSIC
   // =====================
-  // Place an audio file (MP3) in public/music/ and set the path below.
-  // Set to undefined if no music is desired.
-  backgroundMusicPath: undefined,
+  backgroundMusicPath: "/music/mangal-rang.m4a",
+  musicTitle: "Mangal Rang",
 
   // =====================
   // THEME COLORS

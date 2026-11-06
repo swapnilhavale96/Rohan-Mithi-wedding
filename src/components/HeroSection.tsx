@@ -39,11 +39,35 @@ export default function HeroSection() {
 
       {/* Main Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+        {/* Ganesh Symbol at the top */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, y: -20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1.0, delay: 0.1, ease: "easeOut" }}
+          className="mb-3 flex flex-col items-center"
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/ganesh.png"
+            alt="Lord Ganesha"
+            className="w-20 md:w-24 h-auto object-contain mx-auto"
+            style={{
+              filter: "drop-shadow(0 4px 12px rgba(201, 169, 110, 0.4))",
+            }}
+          />
+          <p
+            className="text-xs tracking-[0.25em] uppercase mt-2.5"
+            style={{ color: "#C9A96E", fontFamily: "var(--font-serif)", fontStyle: "italic" }}
+          >
+            शुभ विवाह
+          </p>
+        </motion.div>
+
         {/* Top ornament */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
           className="mb-6"
         >
           <OrnamentalDividerSVG />

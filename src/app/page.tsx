@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import InvitationCover from "@/components/InvitationCover";
 import HeroSection from "@/components/HeroSection";
@@ -9,18 +9,27 @@ import Countdown from "@/components/Countdown";
 import EventCards from "@/components/EventCards";
 import VenueSection from "@/components/VenueSection";
 import RSVPSection from "@/components/RSVPSection";
-import MusicPlayer from "@/components/MusicPlayer";
+import MusicPlayer, { MusicPlayerHandle } from "@/components/MusicPlayer";
 import SiteFooter from "@/components/SiteFooter";
 
 export default function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
+  const musicRef = useRef<MusicPlayerHandle>(null);
+
+  const handleStartMusic = useCallback(() => {
+    musicRef.current?.play();
+  }, []);
 
   return (
     <>
       {/* Invitation Cover */}
       <AnimatePresence mode="wait">
         {!isOpen && (
-          <InvitationCover key="cover" onOpen={() => setIsOpen(true)} />
+          <InvitationCover
+            key="cover"
+            onOpen={() => setIsOpen(true)}
+            onStartMusic={handleStartMusic}
+          />
         )}
       </AnimatePresence>
 
@@ -40,10 +49,12 @@ export default function HomePage() {
             <VenueSection />
             <RSVPSection />
             <SiteFooter />
-            <MusicPlayer />
           </motion.main>
         )}
       </AnimatePresence>
+
+      {/* Persistent Background Music Player with Stop/Play button on the left side */}
+      <MusicPlayer ref={musicRef} isInvitationOpen={isOpen} />
     </>
   );
 }

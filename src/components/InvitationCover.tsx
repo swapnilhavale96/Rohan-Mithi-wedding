@@ -6,18 +6,20 @@ import weddingConfig from "@/data/wedding";
 
 interface InvitationCoverProps {
   onOpen: () => void;
+  onStartMusic?: () => void;
 }
 
-export default function InvitationCover({ onOpen }: InvitationCoverProps) {
+export default function InvitationCover({ onOpen, onStartMusic }: InvitationCoverProps) {
   const [isOpening, setIsOpening] = useState(false);
 
   const handleOpen = useCallback(() => {
+    onStartMusic?.();
     setIsOpening(true);
     // Delay before revealing the main site
     setTimeout(() => {
       onOpen();
     }, 1200);
-  }, [onOpen]);
+  }, [onOpen, onStartMusic]);
 
   return (
     <AnimatePresence>
