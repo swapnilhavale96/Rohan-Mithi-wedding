@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import InvitationCover from "@/components/InvitationCover";
 import HeroSection from "@/components/HeroSection";
 import InvitationSection from "@/components/InvitationSection";
-import Countdown from "@/components/Countdown";
 import EventCards from "@/components/EventCards";
 import VenueSection from "@/components/VenueSection";
 import RSVPSection from "@/components/RSVPSection";
@@ -44,7 +43,6 @@ export default function HomePage() {
           >
             <HeroSection />
             <InvitationSection />
-            <Countdown />
             <EventCards />
             <VenueSection />
             <RSVPSection />

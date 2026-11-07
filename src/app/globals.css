@@ -13,9 +13,9 @@
   --color-accent: #B76E79;
   --color-cream: #FDF8F0;
   --color-cream-dark: #F5EDE0;
-  --color-brown: #3D2B1F;
-  --color-brown-medium: #6B5344;
-  --color-brown-light: #9B8579;
+  --color-brown: #1A120B;
+  --color-brown-medium: #2D1E14;
+  --color-brown-light: #4A3528;
   --color-gold: #B8860B;
   --color-gold-light: #DAA520;
   --color-gold-lighter: #E8D5A0;
@@ -34,7 +34,7 @@
 
 :root {
   --background: #FDF8F0;
-  --foreground: #3D2B1F;
+  --foreground: #1A120B;
 }
 
 /* ========================================
@@ -270,9 +270,9 @@ h1, h2, h3, h4, h5, h6 {
 .section-subtitle {
   font-family: var(--font-sans);
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
-  color: var(--color-brown-light);
+  color: var(--color-brown-medium);
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin-bottom: 3rem;

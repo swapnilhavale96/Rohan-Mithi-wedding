@@ -49,11 +49,11 @@ export default function InvitationSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <p
-            className="text-base md:text-lg leading-relaxed mb-8"
+            className="text-base md:text-lg leading-relaxed mb-8 font-medium"
             style={{
               fontFamily: "var(--font-serif)",
-              color: "#6B5344",
-              fontWeight: 400,
+              color: "#1A120B",
+              fontWeight: 500,
             }}
           >
             {weddingConfig.familyInvitationText}
@@ -85,17 +85,17 @@ export default function InvitationSection() {
             className="text-3xl md:text-4xl mb-1"
             style={{
               fontFamily: "var(--font-script)",
-              color: "#3D2B1F",
+              color: "#1A120B",
             }}
           >
             {weddingConfig.groom.firstName} {weddingConfig.groom.lastName}
           </h3>
           <p
-            className="text-sm"
+            className="text-sm font-medium"
             style={{
               fontFamily: "var(--font-sans)",
-              color: "#9B8579",
-              fontWeight: 300,
+              color: "#3D2B1F",
+              fontWeight: 500,
             }}
           >
             {weddingConfig.groom.parentNames}
@@ -147,17 +147,17 @@ export default function InvitationSection() {
             className="text-3xl md:text-4xl mb-1"
             style={{
               fontFamily: "var(--font-script)",
-              color: "#3D2B1F",
+              color: "#1A120B",
             }}
           >
             {weddingConfig.bride.firstName} {weddingConfig.bride.lastName}
           </h3>
           <p
-            className="text-sm"
+            className="text-sm font-medium"
             style={{
               fontFamily: "var(--font-sans)",
-              color: "#9B8579",
-              fontWeight: 300,
+              color: "#3D2B1F",
+              fontWeight: 500,
             }}
           >
             {weddingConfig.bride.parentNames}

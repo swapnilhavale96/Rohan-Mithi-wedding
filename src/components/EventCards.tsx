@@ -81,11 +81,11 @@ export default function EventCards() {
                       <span className="text-2xl md:hidden" aria-hidden="true">{event.icon}</span>
                       <div>
                         <h3
-                          className="text-xl md:text-2xl"
+                          className="text-xl md:text-2xl font-semibold"
                           style={{
                             fontFamily: "var(--font-serif)",
-                            color: "#3D2B1F",
-                            fontWeight: 500,
+                            color: "#1A120B",
+                            fontWeight: 600,
                           }}
                         >
                           {event.name}
@@ -95,11 +95,11 @@ export default function EventCards() {
 
                     {/* Event description */}
                     <p
-                      className="text-sm leading-relaxed mb-5"
+                      className="text-sm leading-relaxed mb-5 font-normal"
                       style={{
                         fontFamily: "var(--font-sans)",
-                        color: "#6B5344",
-                        fontWeight: 300,
+                        color: "#2D1E14",
+                        fontWeight: 400,
                       }}
                     >
                       {event.description}
@@ -114,21 +114,21 @@ export default function EventCards() {
                         />
                         <div>
                           <p
-                            className="text-xs"
+                            className="text-xs font-semibold"
                             style={{
-                              color: "#3D2B1F",
+                              color: "#1A120B",
                               fontFamily: "var(--font-sans)",
-                              fontWeight: 400,
+                              fontWeight: 600,
                             }}
                           >
                             {event.date}
                           </p>
                           <p
-                            className="text-xs"
+                            className="text-xs font-medium"
                             style={{
-                              color: "#9B8579",
+                              color: "#3D2B1F",
                               fontFamily: "var(--font-sans)",
-                              fontWeight: 300,
+                              fontWeight: 500,
                             }}
                           >
                             {event.time}
@@ -143,21 +143,21 @@ export default function EventCards() {
                         />
                         <div>
                           <p
-                            className="text-xs"
+                            className="text-xs font-semibold"
                             style={{
-                              color: "#3D2B1F",
+                              color: "#1A120B",
                               fontFamily: "var(--font-sans)",
-                              fontWeight: 400,
+                              fontWeight: 600,
                             }}
                           >
                             {event.venue}
                           </p>
                           <p
-                            className="text-xs"
+                            className="text-xs font-medium"
                             style={{
-                              color: "#9B8579",
+                              color: "#3D2B1F",
                               fontFamily: "var(--font-sans)",
-                              fontWeight: 300,
+                              fontWeight: 500,
                             }}
                           >
                             {event.address}
@@ -173,15 +173,15 @@ export default function EventCards() {
                           />
                           <div>
                             <p
-                              className="text-xs"
+                              className="text-xs font-medium"
                               style={{
-                                color: "#9B8579",
+                                color: "#3D2B1F",
                                 fontFamily: "var(--font-sans)",
-                                fontWeight: 300,
+                                fontWeight: 500,
                               }}
                             >
                               Dress Code:{" "}
-                              <span style={{ color: "#6B5344", fontWeight: 400 }}>
+                              <span style={{ color: "#1A120B", fontWeight: 600 }}>
                                 {event.dressCode}
                               </span>
                             </p>

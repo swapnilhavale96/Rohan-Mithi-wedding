@@ -141,7 +141,7 @@ const weddingConfig: WeddingConfig = {
   // =====================
   venue: {
     name: "Dak Bangla Zila Parishad, Dumka",
-    address: "765X+VQH, Bypass Rd",
+    address: "Bypass Rd",
     city: "Dumka, Jharkhand 814101",
     googleMapsUrl: "https://maps.app.goo.gl/QCmy7n1kCD5o9gz88",
     googleMapsEmbedQuery: "Dak Bangla Zila Parishad, Dumka",
@@ -156,7 +156,7 @@ const weddingConfig: WeddingConfig = {
       name: "Haldi Ceremony",
       date: "Thursday, 08 December 2026",
       time: "10:00 AM – 1:00 PM",
-      venue: "Dak Bangla Zila Parishad, Dumka",
+      venue: "Kumharpara, Dumka",
       address: "Dumka, Jharkhand ",
       description:
         "Join us for the traditional Haldi ceremony as we bless the couple with turmeric for a radiant glow and auspicious beginning.",
@@ -168,7 +168,7 @@ const weddingConfig: WeddingConfig = {
       name: "Mehendi Ceremony",
       date: "Thursday,  08 December 2026",
       time: "4:00 PM – 8:00 PM",
-      venue: "Dak Bangla Zila Parishad, Dumka",
+      venue: "Kumharpara, Dumka",
       address: "Dumka, Jharkhand ",
       description:
         "An afternoon of beautiful henna artistry, music, and celebration. Watch as intricate patterns tell stories of love.",
@@ -180,7 +180,7 @@ const weddingConfig: WeddingConfig = {
       name: "Sangeet Night",
       date: "Thursday, 08 December 2026",
       time: "7:00 PM Onwards",
-      venue: "Dak Bangla Zila Parishad, Dumka",
+      venue: "Kumharpara, Dumka",
       address: "Dumka, Jharkhand ",
       description:
         "A sparkling evening of dance, music, and unforgettable performances. Get ready to dance the night away!",
@@ -191,15 +191,15 @@ const weddingConfig: WeddingConfig = {
       id: "wedding",
       name: "Wedding Ceremony",
       date: "Wednesday, 09 December 2026",
-      time: "6:00 PM – 9:00 PM",
+      time: "7:00 PM – 10:00 PM",
       venue: "Dak Bangla Zila Parishad, Dumka",
       address: "Dumka, Jharkhand ",
       description:
-        "Witness the sacred union as Aarav and Meera take their vows and begin their beautiful journey together around the holy fire.",
-      dressCode: "Traditional Indian Formal",
+        "Witness the sacred union of Rohan and Mithi around the holy fire, followed by dinner and celebrations",
+      dressCode: "Elegant & Formal",
       icon: "💍",
     },
-    {
+    /*{
       id: "reception",
       name: "Grand Reception",
       date: "Wednesday, 09 December 2026",
@@ -210,7 +210,7 @@ const weddingConfig: WeddingConfig = {
         "Join us for a grand celebration with dinner, music, and joyous festivities as we welcome the newlyweds.",
       dressCode: "Elegant & Formal",
       icon: "🎊",
-    },
+    }*/
   ],
 
   // =====================
@@ -268,8 +268,8 @@ const weddingConfig: WeddingConfig = {
   // =====================
   // MUSIC
   // =====================
-  backgroundMusicPath: "/music/mangal-rang.m4a",
-  musicTitle: "Mangal Rang",
+  backgroundMusicPath: "/music/judi-jodi.m4a",
+  musicTitle: "Judi Jodi",
 
   // =====================
   // THEME COLORS
@@ -280,7 +280,7 @@ const weddingConfig: WeddingConfig = {
     accent: "#B76E79",        // Muted rose
     background: "#FDF8F0",    // Cream/ivory
     backgroundAlt: "#F5EDE0", // Warm cream
-    text: "#3D2B1F",          // Dark brown
+    text: "#271b14ff",          // Dark brown
     textLight: "#6B5344",     // Medium brown
     textMuted: "#9B8579",     // Light brown/taupe
     gold: "#B8860B",          // Rich gold

@@ -79,21 +79,21 @@ export default function VenueSection() {
                 />
                 <div>
                   <p
-                    className="text-sm leading-relaxed"
+                    className="text-sm leading-relaxed font-medium"
                     style={{
-                      color: "#6B5344",
+                      color: "#1A120B",
                       fontFamily: "var(--font-sans)",
-                      fontWeight: 300,
+                      fontWeight: 500,
                     }}
                   >
                     {venue.address}
                   </p>
                   <p
-                    className="text-sm"
+                    className="text-sm font-medium"
                     style={{
-                      color: "#6B5344",
+                      color: "#1A120B",
                       fontFamily: "var(--font-sans)",
-                      fontWeight: 300,
+                      fontWeight: 500,
                     }}
                   >
                     {venue.city}
@@ -107,11 +107,11 @@ export default function VenueSection() {
                   style={{ color: "#C9A96E", marginTop: "4px", flexShrink: 0 }}
                 />
                 <p
-                  className="text-sm"
+                  className="text-sm font-semibold"
                   style={{
-                    color: "#6B5344",
+                    color: "#1A120B",
                     fontFamily: "var(--font-sans)",
-                    fontWeight: 300,
+                    fontWeight: 600,
                   }}
                 >
                   {weddingConfig.weddingDateDisplay}
@@ -181,22 +181,22 @@ export default function VenueSection() {
                 </div>
 
                 <h4
-                  className="text-lg mb-2"
+                  className="text-lg mb-2 font-semibold"
                   style={{
                     fontFamily: "var(--font-serif)",
-                    color: "#3D2B1F",
-                    fontWeight: 500,
+                    color: "#1A120B",
+                    fontWeight: 600,
                   }}
                 >
                   {venue.name}
                 </h4>
 
                 <p
-                  className="text-xs mb-6"
+                  className="text-xs mb-6 font-medium"
                   style={{
-                    color: "#9B8579",
+                    color: "#2D1E14",
                     fontFamily: "var(--font-sans)",
-                    fontWeight: 300,
+                    fontWeight: 500,
                   }}
                 >
                   {venue.city}

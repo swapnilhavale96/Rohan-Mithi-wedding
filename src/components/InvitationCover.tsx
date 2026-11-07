@@ -89,8 +89,8 @@ export default function InvitationCover({ onOpen, onStartMusic }: InvitationCove
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5, duration: 0.6 }}
-                    className="text-xs tracking-[0.3em] uppercase mb-4"
-                    style={{ color: "#9B8579", fontFamily: "var(--font-sans)" }}
+                    className="text-xs tracking-[0.3em] uppercase mb-4 font-semibold"
+                    style={{ color: "#3D2B1F", fontFamily: "var(--font-sans)", fontWeight: 600 }}
                   >
                     Shubh Vivah
                   </motion.p>
@@ -100,11 +100,11 @@ export default function InvitationCover({ onOpen, onStartMusic }: InvitationCove
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6, duration: 0.6 }}
-                    className="text-lg md:text-xl mb-6"
+                    className="text-lg md:text-xl mb-6 font-medium"
                     style={{
-                      color: "#6B5344",
+                      color: "#1A120B",
                       fontFamily: "var(--font-serif)",
-                      fontWeight: 400,
+                      fontWeight: 500,
                       fontStyle: "italic",
                     }}
                   >
@@ -188,8 +188,8 @@ export default function InvitationCover({ onOpen, onStartMusic }: InvitationCove
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1.1, duration: 0.6 }}
-                    className="text-sm tracking-wider mb-8"
-                    style={{ color: "#6B5344", fontFamily: "var(--font-sans)", fontWeight: 300 }}
+                    className="text-base md:text-lg tracking-wider mb-8 font-bold"
+                    style={{ color: "#1A120B", fontFamily: "var(--font-sans)", fontWeight: 700 }}
                   >
                     {weddingConfig.weddingDateDisplay}
                   </motion.p>

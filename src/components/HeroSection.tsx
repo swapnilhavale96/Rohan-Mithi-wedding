@@ -78,8 +78,8 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="text-xs md:text-sm tracking-[0.3em] uppercase mb-6"
-          style={{ color: "#9B8579", fontFamily: "var(--font-sans)", fontWeight: 300 }}
+          className="text-xs md:text-sm tracking-[0.3em] uppercase mb-6 font-semibold"
+          style={{ color: "#2D1E14", fontFamily: "var(--font-sans)", fontWeight: 600 }}
         >
           {weddingConfig.invitationSubheading}
         </motion.p>
@@ -146,22 +146,22 @@ export default function HeroSection() {
           className="mt-8"
         >
           <p
-            className="text-sm md:text-base tracking-[0.2em] uppercase"
+            className="text-base md:text-lg tracking-[0.2em] uppercase font-bold"
             style={{
-              color: "#6B5344",
+              color: "#1A120B",
               fontFamily: "var(--font-sans)",
-              fontWeight: 300,
+              fontWeight: 700,
             }}
           >
             {weddingConfig.weddingDateDisplay}
           </p>
 
           <p
-            className="text-sm mt-3 tracking-wider"
+            className="text-sm mt-3 tracking-wider font-medium"
             style={{
-              color: "#9B8579",
+              color: "#2D1E14",
               fontFamily: "var(--font-sans)",
-              fontWeight: 300,
+              fontWeight: 500,
             }}
           >
             {weddingConfig.venue.name}, {weddingConfig.venue.city}
@@ -173,12 +173,12 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
-          className="mt-8 text-sm md:text-base max-w-lg mx-auto leading-relaxed"
+          className="mt-8 text-sm md:text-base max-w-lg mx-auto leading-relaxed font-medium"
           style={{
             fontFamily: "var(--font-serif)",
-            color: "#6B5344",
+            color: "#1A120B",
             fontStyle: "italic",
-            fontWeight: 400,
+            fontWeight: 500,
           }}
         >
           &ldquo;{weddingConfig.invitationMessage}&rdquo;
@@ -197,11 +197,11 @@ export default function HeroSection() {
             aria-label="Scroll to explore the invitation"
           >
             <span
-              className="text-xs tracking-[0.2em] uppercase transition-colors duration-300"
+              className="text-xs tracking-[0.2em] uppercase font-semibold transition-colors duration-300"
               style={{
-                color: "#9B8579",
+                color: "#2D1E14",
                 fontFamily: "var(--font-sans)",
-                fontWeight: 300,
+                fontWeight: 600,
               }}
             >
               Explore

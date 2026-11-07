@@ -77,11 +77,11 @@ export default function SiteFooter() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 0.7 }}
-          className="text-sm tracking-wider mb-6"
+          className="text-sm tracking-wider mb-6 font-semibold"
           style={{
-            color: "#9B8579",
+            color: "#1A120B",
             fontFamily: "var(--font-sans)",
-            fontWeight: 300,
+            fontWeight: 600,
           }}
         >
           {weddingConfig.weddingDateDisplay}
@@ -98,12 +98,12 @@ export default function SiteFooter() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.7 }}
-          className="text-sm md:text-base max-w-md mx-auto mb-6 leading-relaxed"
+          className="text-sm md:text-base max-w-md mx-auto mb-6 leading-relaxed font-medium"
           style={{
             fontFamily: "var(--font-serif)",
-            color: "#6B5344",
+            color: "#1A120B",
             fontStyle: "italic",
-            fontWeight: 400,
+            fontWeight: 500,
           }}
         >
           {weddingConfig.footerMessage}
@@ -126,11 +126,11 @@ export default function SiteFooter() {
           style={{ borderTop: "1px solid rgba(201, 169, 110, 0.1)" }}
         >
           <p
-            className="text-[11px]"
+            className="text-[11px] font-medium"
             style={{
-              color: "#9B8579",
+              color: "#4A3528",
               fontFamily: "var(--font-sans)",
-              fontWeight: 300,
+              fontWeight: 500,
             }}
           >
             Made with{" "}

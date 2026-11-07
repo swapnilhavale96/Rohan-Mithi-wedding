@@ -102,11 +102,11 @@ export default function RSVPSection() {
           </p>
 
           <p
-            className="text-sm mb-8 max-w-sm mx-auto leading-relaxed"
+            className="text-sm mb-8 max-w-sm mx-auto leading-relaxed font-normal"
             style={{
               fontFamily: "var(--font-sans)",
-              color: "#9B8579",
-              fontWeight: 300,
+              color: "#2D1E14",
+              fontWeight: 400,
             }}
           >
             Please confirm your attendance by sending us a message on WhatsApp. 
@@ -130,11 +130,11 @@ export default function RSVPSection() {
             <div>
               <button
                 onClick={handleCopyLink}
-                className="inline-flex items-center gap-2 text-xs transition-colors"
+                className="inline-flex items-center gap-2 text-xs font-medium transition-colors"
                 style={{
-                  color: copied ? "#25D366" : "#9B8579",
+                  color: copied ? "#25D366" : "#2D1E14",
                   fontFamily: "var(--font-sans)",
-                  fontWeight: 300,
+                  fontWeight: 500,
                   background: "none",
                   border: "none",
                   cursor: "pointer",
@@ -159,11 +159,11 @@ export default function RSVPSection() {
 
           {/* Note */}
           <p
-            className="mt-6 text-[11px] italic"
+            className="mt-6 text-[11px] italic font-medium"
             style={{
-              color: "#9B8579",
+              color: "#4A3528",
               fontFamily: "var(--font-sans)",
-              fontWeight: 300,
+              fontWeight: 500,
             }}
           >
             Your RSVP will be sent directly via WhatsApp message.

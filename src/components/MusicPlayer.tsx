@@ -30,7 +30,7 @@ const MusicPlayer = forwardRef<MusicPlayerHandle, MusicPlayerProps>(
     const [showTooltip, setShowTooltip] = useState(false);
     const [audioError, setAudioError] = useState(false);
 
-    const songTitle = weddingConfig.musicTitle || "Mangal Rang";
+    const songTitle = weddingConfig.musicTitle || "";
     const musicPath = weddingConfig.backgroundMusicPath;
 
     useEffect(() => {
@@ -106,8 +106,8 @@ const MusicPlayer = forwardRef<MusicPlayerHandle, MusicPlayerProps>(
           onPause={() => setIsPlaying(false)}
         >
           <source src={musicPath} type="audio/mp4" />
-          <source src="/music/mangal-rang.m4a" type="audio/mp4" />
-          <source src="/music/mangal-rang.mp3" type="audio/mpeg" />
+          <source src="/music/judi-jodi.m4a" type="audio/mp4" />
+          <source src="/music/judi-jodi.mp3" type="audio/mpeg" />
         </audio>
 
         {/* Floating Music Control Button */}
@@ -131,8 +131,8 @@ const MusicPlayer = forwardRef<MusicPlayerHandle, MusicPlayerProps>(
                   {audioError
                     ? "Audio file not found"
                     : isPlaying
-                    ? `Stop music (${songTitle})`
-                    : `Play music (${songTitle})`}
+                      ? `Stop music (${songTitle})`
+                      : `Play music (${songTitle})`}
                 </span>
               </motion.div>
             )}
@@ -162,8 +162,8 @@ const MusicPlayer = forwardRef<MusicPlayerHandle, MusicPlayerProps>(
               audioError
                 ? "Audio file not available"
                 : isPlaying
-                ? "Stop background music"
-                : "Play background music"
+                  ? "Stop background music"
+                  : "Play background music"
             }
           >
             {audioError ? (
@@ -187,6 +187,7 @@ const MusicPlayer = forwardRef<MusicPlayerHandle, MusicPlayerProps>(
           {/* Decorative "Now Playing: Mangal Rang" label */}
           {!audioError && (
             <AnimatePresence>
+
               {isPlaying && (
                 <motion.div
                   initial={{ opacity: 0, x: -10 }}
