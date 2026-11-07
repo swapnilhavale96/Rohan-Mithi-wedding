@@ -77,7 +77,12 @@ body {
    TYPOGRAPHY
    ======================================== */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
   font-weight: 500;
   line-height: 1.2;
@@ -132,11 +137,9 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1;
   max-width: 120px;
   height: 1px;
-  background: linear-gradient(
-    to var(--direction, right),
-    transparent,
-    var(--color-primary)
-  );
+  background: linear-gradient(to var(--direction, right),
+      transparent,
+      var(--color-primary));
 }
 
 .ornamental-divider::before {
@@ -209,20 +212,19 @@ h1, h2, h3, h4, h5, h6 {
   0% {
     background-position: -200% center;
   }
+
   100% {
     background-position: 200% center;
   }
 }
 
 .gold-shimmer-text {
-  background: linear-gradient(
-    90deg,
-    var(--color-gold) 0%,
-    var(--color-primary-light) 25%,
-    var(--color-gold-lighter) 50%,
-    var(--color-primary-light) 75%,
-    var(--color-gold) 100%
-  );
+  background: linear-gradient(90deg,
+      var(--color-gold) 0%,
+      var(--color-primary-light) 25%,
+      var(--color-gold-lighter) 50%,
+      var(--color-primary-light) 75%,
+      var(--color-gold) 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -254,28 +256,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-title {
   font-family: var(--font-serif);
-  font-size: 2.25rem;
-  font-weight: 500;
+  font-size: 2.75rem;
+  font-weight: 600;
   text-align: center;
   color: var(--foreground);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 @media (min-width: 768px) {
   .section-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 
 .section-subtitle {
   font-family: var(--font-sans);
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
   text-align: center;
   color: var(--color-brown-medium);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin-bottom: 3.25rem;
 }
 
 /* ========================================
@@ -287,12 +289,15 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(0) rotate(0deg);
     opacity: 0;
   }
+
   10% {
     opacity: 0.6;
   }
+
   90% {
     opacity: 0.6;
   }
+
   100% {
     transform: translateY(-100vh) rotate(360deg);
     opacity: 0;
@@ -304,12 +309,15 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-20px) rotate(0deg);
     opacity: 0;
   }
+
   10% {
     opacity: 0.4;
   }
+
   90% {
     opacity: 0.4;
   }
+
   100% {
     transform: translateY(100vh) rotate(180deg);
     opacity: 0;
@@ -324,12 +332,12 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.875rem 2rem;
+  padding: 0.95rem 2.25rem;
   background: linear-gradient(135deg, var(--color-primary), var(--color-gold));
   color: white;
   font-family: var(--font-sans);
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   border: none;
@@ -353,12 +361,12 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.75rem;
+  padding: 0.85rem 2rem;
   background: transparent;
   color: var(--color-primary);
   font-family: var(--font-sans);
-  font-size: 0.8125rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   border: 1.5px solid var(--color-primary);

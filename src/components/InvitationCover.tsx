@@ -89,7 +89,7 @@ export default function InvitationCover({ onOpen, onStartMusic }: InvitationCove
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5, duration: 0.6 }}
-                    className="text-xs tracking-[0.3em] uppercase mb-4 font-semibold"
+                    className="text-sm tracking-[0.3em] uppercase mb-4 font-semibold"
                     style={{ color: "#3D2B1F", fontFamily: "var(--font-sans)", fontWeight: 600 }}
                   >
                     Shubh Vivah
@@ -100,7 +100,7 @@ export default function InvitationCover({ onOpen, onStartMusic }: InvitationCove
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6, duration: 0.6 }}
-                    className="text-lg md:text-xl mb-6 font-medium"
+                    className="text-xl md:text-2xl mb-6 font-medium"
                     style={{
                       color: "#1A120B",
                       fontFamily: "var(--font-serif)",
@@ -131,7 +131,7 @@ export default function InvitationCover({ onOpen, onStartMusic }: InvitationCove
                     transition={{ delay: 0.8, duration: 0.8 }}
                   >
                     <h1
-                      className="text-4xl md:text-5xl lg:text-6xl mb-2 gold-shimmer-text"
+                      className="text-5xl md:text-6xl lg:text-7xl mb-2 gold-shimmer-text"
                       style={{
                         fontFamily: "var(--font-script)",
                         lineHeight: 1.3,
@@ -140,13 +140,13 @@ export default function InvitationCover({ onOpen, onStartMusic }: InvitationCove
                       {weddingConfig.groom.firstName}
                     </h1>
                     <p
-                      className="text-sm tracking-[0.3em] my-3"
-                      style={{ color: "#C9A96E", fontFamily: "var(--font-sans)" }}
+                      className="text-base tracking-[0.3em] my-3 font-semibold"
+                      style={{ color: "#C9A96E", fontFamily: "var(--font-sans)", fontWeight: 600 }}
                     >
                       &amp;
                     </p>
                     <h1
-                      className="text-4xl md:text-5xl lg:text-6xl mb-4 gold-shimmer-text"
+                      className="text-5xl md:text-6xl lg:text-7xl mb-4 gold-shimmer-text"
                       style={{
                         fontFamily: "var(--font-script)",
                         lineHeight: 1.3,
@@ -188,7 +188,7 @@ export default function InvitationCover({ onOpen, onStartMusic }: InvitationCove
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1.1, duration: 0.6 }}
-                    className="text-base md:text-lg tracking-wider mb-8 font-bold"
+                    className="text-lg md:text-xl tracking-wider mb-8 font-bold"
                     style={{ color: "#1A120B", fontFamily: "var(--font-sans)", fontWeight: 700 }}
                   >
                     {weddingConfig.weddingDateDisplay}

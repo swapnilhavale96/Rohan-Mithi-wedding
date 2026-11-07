@@ -78,10 +78,10 @@ export default function EventCards() {
 
                     {/* Event icon & name */}
                     <div className="flex items-center gap-3 mb-4">
-                      <span className="text-2xl md:hidden" aria-hidden="true">{event.icon}</span>
+                      <span className="text-3xl md:hidden" aria-hidden="true">{event.icon}</span>
                       <div>
                         <h3
-                          className="text-xl md:text-2xl font-semibold"
+                          className="text-2xl md:text-3xl font-semibold"
                           style={{
                             fontFamily: "var(--font-serif)",
                             color: "#1A120B",
@@ -95,7 +95,7 @@ export default function EventCards() {
 
                     {/* Event description */}
                     <p
-                      className="text-sm leading-relaxed mb-5 font-normal"
+                      className="text-base leading-relaxed mb-5 font-normal"
                       style={{
                         fontFamily: "var(--font-sans)",
                         color: "#2D1E14",
@@ -106,15 +106,15 @@ export default function EventCards() {
                     </p>
 
                     {/* Event details */}
-                    <div className="space-y-2.5">
+                    <div className="space-y-3">
                       <div className="flex items-start gap-2.5">
                         <Clock
-                          size={14}
+                          size={16}
                           style={{ color: "#C9A96E", marginTop: "3px", flexShrink: 0 }}
                         />
                         <div>
                           <p
-                            className="text-xs font-semibold"
+                            className="text-sm md:text-base font-semibold"
                             style={{
                               color: "#1A120B",
                               fontFamily: "var(--font-sans)",
@@ -124,7 +124,7 @@ export default function EventCards() {
                             {event.date}
                           </p>
                           <p
-                            className="text-xs font-medium"
+                            className="text-sm md:text-base font-medium"
                             style={{
                               color: "#3D2B1F",
                               fontFamily: "var(--font-sans)",
@@ -138,12 +138,12 @@ export default function EventCards() {
 
                       <div className="flex items-start gap-2.5">
                         <MapPin
-                          size={14}
+                          size={16}
                           style={{ color: "#C9A96E", marginTop: "3px", flexShrink: 0 }}
                         />
                         <div>
                           <p
-                            className="text-xs font-semibold"
+                            className="text-sm md:text-base font-semibold"
                             style={{
                               color: "#1A120B",
                               fontFamily: "var(--font-sans)",
@@ -153,7 +153,7 @@ export default function EventCards() {
                             {event.venue}
                           </p>
                           <p
-                            className="text-xs font-medium"
+                            className="text-sm md:text-base font-medium"
                             style={{
                               color: "#3D2B1F",
                               fontFamily: "var(--font-sans)",
@@ -168,12 +168,12 @@ export default function EventCards() {
                       {event.dressCode && (
                         <div className="flex items-start gap-2.5">
                           <Palette
-                            size={14}
+                            size={16}
                             style={{ color: "#C9A96E", marginTop: "3px", flexShrink: 0 }}
                           />
                           <div>
                             <p
-                              className="text-xs font-medium"
+                              className="text-sm md:text-base font-medium"
                               style={{
                                 color: "#3D2B1F",
                                 fontFamily: "var(--font-sans)",

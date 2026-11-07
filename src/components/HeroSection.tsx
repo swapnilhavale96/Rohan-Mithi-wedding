@@ -56,8 +56,8 @@ export default function HeroSection() {
             }}
           />
           <p
-            className="text-xs tracking-[0.25em] uppercase mt-2.5"
-            style={{ color: "#C9A96E", fontFamily: "var(--font-serif)", fontStyle: "italic" }}
+            className="text-sm md:text-base tracking-[0.25em] uppercase mt-2.5 font-semibold"
+            style={{ color: "#C9A96E", fontFamily: "var(--font-serif)", fontStyle: "italic", fontWeight: 600 }}
           >
             शुभ विवाह
           </p>
@@ -78,7 +78,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="text-xs md:text-sm tracking-[0.3em] uppercase mb-6 font-semibold"
+          className="text-sm md:text-base tracking-[0.3em] uppercase mb-6 font-semibold"
           style={{ color: "#2D1E14", fontFamily: "var(--font-sans)", fontWeight: 600 }}
         >
           {weddingConfig.invitationSubheading}
@@ -91,7 +91,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.6 }}
         >
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl mb-2"
+            className="text-6xl md:text-8xl lg:text-9xl mb-2"
             style={{
               fontFamily: "var(--font-script)",
               color: "#3D2B1F",
@@ -109,11 +109,12 @@ export default function HeroSection() {
               }}
             />
             <span
-              className="text-lg md:text-xl"
+              className="text-xl md:text-2xl font-semibold"
               style={{
                 fontFamily: "var(--font-serif)",
                 color: "#C9A96E",
                 fontStyle: "italic",
+                fontWeight: 600,
               }}
             >
               &amp;
@@ -127,7 +128,7 @@ export default function HeroSection() {
           </div>
 
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl"
+            className="text-6xl md:text-8xl lg:text-9xl"
             style={{
               fontFamily: "var(--font-script)",
               color: "#3D2B1F",
@@ -146,7 +147,7 @@ export default function HeroSection() {
           className="mt-8"
         >
           <p
-            className="text-base md:text-lg tracking-[0.2em] uppercase font-bold"
+            className="text-lg md:text-xl tracking-[0.2em] uppercase font-bold"
             style={{
               color: "#1A120B",
               fontFamily: "var(--font-sans)",
@@ -157,7 +158,7 @@ export default function HeroSection() {
           </p>
 
           <p
-            className="text-sm mt-3 tracking-wider font-medium"
+            className="text-base md:text-lg mt-3 tracking-wider font-medium"
             style={{
               color: "#2D1E14",
               fontFamily: "var(--font-sans)",
@@ -173,7 +174,7 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
-          className="mt-8 text-sm md:text-base max-w-lg mx-auto leading-relaxed font-medium"
+          className="mt-8 text-base md:text-lg max-w-xl mx-auto leading-relaxed font-medium"
           style={{
             fontFamily: "var(--font-serif)",
             color: "#1A120B",
@@ -197,7 +198,7 @@ export default function HeroSection() {
             aria-label="Scroll to explore the invitation"
           >
             <span
-              className="text-xs tracking-[0.2em] uppercase font-semibold transition-colors duration-300"
+              className="text-sm tracking-[0.2em] uppercase font-semibold transition-colors duration-300"
               style={{
                 color: "#2D1E14",
                 fontFamily: "var(--font-sans)",

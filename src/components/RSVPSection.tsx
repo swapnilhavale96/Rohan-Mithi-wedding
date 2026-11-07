@@ -91,18 +91,18 @@ export default function RSVPSection() {
 
           {/* Message */}
           <p
-            className="text-base md:text-lg mb-3 leading-relaxed"
+            className="text-lg md:text-xl mb-3 leading-relaxed font-medium"
             style={{
               fontFamily: "var(--font-serif)",
-              color: "#3D2B1F",
-              fontWeight: 400,
+              color: "#1A120B",
+              fontWeight: 500,
             }}
           >
             We would be honoured by your presence
           </p>
 
           <p
-            className="text-sm mb-8 max-w-sm mx-auto leading-relaxed font-normal"
+            className="text-base md:text-lg mb-8 max-w-md mx-auto leading-relaxed font-normal"
             style={{
               fontFamily: "var(--font-sans)",
               color: "#2D1E14",
@@ -130,7 +130,7 @@ export default function RSVPSection() {
             <div>
               <button
                 onClick={handleCopyLink}
-                className="inline-flex items-center gap-2 text-xs font-medium transition-colors"
+                className="inline-flex items-center gap-2 text-sm font-medium transition-colors"
                 style={{
                   color: copied ? "#25D366" : "#2D1E14",
                   fontFamily: "var(--font-sans)",
@@ -159,7 +159,7 @@ export default function RSVPSection() {
 
           {/* Note */}
           <p
-            className="mt-6 text-[11px] italic font-medium"
+            className="mt-6 text-xs md:text-sm italic font-medium"
             style={{
               color: "#4A3528",
               fontFamily: "var(--font-sans)",

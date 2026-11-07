@@ -30,11 +30,11 @@ export default function InvitationSection() {
           <span className="text-4xl mb-4 block" aria-hidden="true">🙏</span>
 
           <p
-            className="text-xs tracking-[0.35em] uppercase mb-6"
+            className="text-sm md:text-base tracking-[0.35em] uppercase mb-6 font-semibold"
             style={{
               color: "#C9A96E",
               fontFamily: "var(--font-sans)",
-              fontWeight: 400,
+              fontWeight: 600,
             }}
           >
             ॐ श्री गणेशाय नमः
@@ -49,7 +49,7 @@ export default function InvitationSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <p
-            className="text-base md:text-lg leading-relaxed mb-8 font-medium"
+            className="text-lg md:text-xl leading-relaxed mb-8 font-medium"
             style={{
               fontFamily: "var(--font-serif)",
               color: "#1A120B",
@@ -82,7 +82,7 @@ export default function InvitationSection() {
           className="mb-6"
         >
           <h3
-            className="text-3xl md:text-4xl mb-1"
+            className="text-4xl md:text-5xl mb-2"
             style={{
               fontFamily: "var(--font-script)",
               color: "#1A120B",
@@ -91,7 +91,7 @@ export default function InvitationSection() {
             {weddingConfig.groom.firstName} {weddingConfig.groom.lastName}
           </h3>
           <p
-            className="text-sm font-medium"
+            className="text-base md:text-lg font-medium"
             style={{
               fontFamily: "var(--font-sans)",
               color: "#3D2B1F",
@@ -115,15 +115,16 @@ export default function InvitationSection() {
             style={{ background: "linear-gradient(to right, transparent, #C9A96E)" }}
           />
           <div
-            className="w-10 h-10 rounded-full flex items-center justify-center"
+            className="w-11 h-11 rounded-full flex items-center justify-center"
             style={{ border: "1px solid #C9A96E" }}
           >
             <span
-              className="text-sm"
+              className="text-base font-medium"
               style={{
                 fontFamily: "var(--font-serif)",
                 color: "#C9A96E",
                 fontStyle: "italic",
+                fontWeight: 500,
               }}
             >
               with
@@ -144,7 +145,7 @@ export default function InvitationSection() {
           className="mt-6"
         >
           <h3
-            className="text-3xl md:text-4xl mb-1"
+            className="text-4xl md:text-5xl mb-2"
             style={{
               fontFamily: "var(--font-script)",
               color: "#1A120B",
@@ -153,7 +154,7 @@ export default function InvitationSection() {
             {weddingConfig.bride.firstName} {weddingConfig.bride.lastName}
           </h3>
           <p
-            className="text-sm font-medium"
+            className="text-base md:text-lg font-medium"
             style={{
               fontFamily: "var(--font-sans)",
               color: "#3D2B1F",
